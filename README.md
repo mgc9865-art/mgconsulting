@@ -1,2 +1,2 @@
 # mgconsulting
-Site web du projet
+Site web de la société MG CONSULTING
