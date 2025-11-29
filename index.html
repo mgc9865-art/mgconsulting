@@ -1,56 +1,248 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MG CONSEIL - Solutions en Chaufferie et Électricité</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo_misc.css">
     <link rel="stylesheet" href="css/templatemo_style.css">
 
+    <!-- JS -->
     <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/templatemo_custom.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/templatemo_custom.js"></script>
 </head>
 
 <body>
-    <!-- (tout le reste du site inchangé) -->
 
-    <!-- contact start -->
-    <div class="contact-wrapper">
-    <div id="templatemo_contact" class="templatemo_contact">
-        <div class="text-center">
-            <div class="templatemo_contacttitle">CONTACTEZ-NOUS</div>
-            <div class="templatemo_sub_contacttitle">Demandez un devis ou posez vos questions</div>
+<!-- HEADER -->
+<header id="templatemo_home" class="templatemo_headerimg">
+    <img src="images/templatemo_header.jpg" alt="Header illustration">
+    <div class="templatemo_headerimg_cover">
+        <img src="images/templatemo_header.png" alt="Overlay visual">
+    </div>
+
+    <nav class="navbar navbar-default templatemo_menu" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                    <span class="sr-only">Afficher le menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div id="main-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="menu" href="#templatemo_home">HOME</a></li>
+                    <li><a class="menu" href="#templatemo_service">SERVICES</a></li>
+                    <li><a class="menu" href="#templatemo_packages">PACKAGES</a></li>
+                    <li><a class="menu" href="#templatemo_about">A PROPOS</a></li>
+                    <li><a class="menu" href="#templatemo_contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container templatemo_wrapper">
+        <section class="row">
+            <div class="col-sm-6">
+                <h1 class="templatemo_title"><span>MG </span>CONSEIL</h1>
+                <h2 class="templatemo_subtitle">Solutions en Énergie et Audit</h2>
+            </div>
+
+            <div class="col-sm-6 templatemo_home">
+                <h3 class="templatemo_headertitle">Votre Partenaire Énergétique</h3>
+                <p class="templatemo_hometext">
+                    MG CONSEIL vous accompagne pour optimiser votre consommation énergétique et sécuriser vos installations électriques et de chauffage.
+                    Solutions clés en main : diagnostic, installation, maintenance.
+                </p>
+                <a class="templatemo_homebuton" href="#templatemo_about">PLUS DE DÉTAIL</a>
+            </div>
+        </section>
+    </div>
+</header>
+
+<!-- SERVICES -->
+<section id="templatemo_service" class="container">
+    
+    <!-- Block 1 -->
+    <div class="row">
+        <div class="col-md-6 templatemo_service">
+            <div class="gallery-item">
+                <img src="images/service/1.jpg" alt="Chaufferie installation">
+                <div class="overlay">
+                    <a href="images/service/1.jpg" data-rel="lightbox" class="fa fa-search-plus"></a>
+                </div>
+            </div>
         </div>
 
-        <div class="templatemo_contactform">
-        <!-- 🔥 FORMULAIRE MIS À JOUR POUR UTILISER contact.php -->
-        <form action="contact.php" method="post">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Nom" required>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Tél">
-            <input type="text" name="subject" id="subject" class="form-control" placeholder="Sujet">
-            <textarea name="message" class="message" placeholder="MESSAGE ... " id="message" required></textarea>
-
-            <div class="clear"></div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+        <div class="col-md-6 templatemo_service">
+            <h3 class="templatemo_service_title">CHAUFFERIE & CHAUFFAGE</h3>
+            <p class="templatemo_service_text">
+                Installation et entretien de chaufferies performantes et sécurisées pour particuliers et industries.
+            </p>
+            <a class="templatemo_morebutton" href="#templatemo_contact">Demandez-nous plus de détails</a>
         </div>
     </div>
-    </div>
-    <!-- contact end -->
 
-    <div class="templatemo_footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    Copyright &copy; 2084 <a href="#">MG CONSEIL</a>
+    <!-- Block 2 -->
+    <div class="row templatemo_ordering">
+        <div class="col-md-6 templatemo_service one">
+            <h3 class="templatemo_service_title">ÉLECTRICITÉ</h3>
+            <p class="templatemo_service_text">
+                Mise aux normes, installation et maintenance de vos réseaux électriques et systèmes de sécurité.
+            </p>
+            <a class="templatemo_morebutton" href="#templatemo_contact">En savoir plus</a>
+        </div>
+
+        <div class="col-md-6 templatemo_service">
+            <div class="gallery-item">
+                <img src="images/service/2.jpg" alt="Travaux électricité">
+                <div class="overlay">
+                    <a href="images/service/2.jpg" data-rel="lightbox" class="fa fa-search-plus"></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Block 3 -->
+    <div class="row">
+        <div class="col-md-6 templatemo_service">
+            <div class="gallery-item">
+                <img src="images/service/3.jpg" alt="Audit énergétique">
+                <div class="overlay">
+                    <a href="images/service/3.jpg" data-rel="lightbox" class="fa fa-search-plus"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 templatemo_service">
+            <h3 class="templatemo_service_title">AUDIT ÉNERGÉTIQUE</h3>
+            <p class="templatemo_service_text">
+                Analyse complète pour identifier les pertes d'énergie et proposer des solutions durables et rentables.
+            </p>
+            <a class="templatemo_morebutton" href="#templatemo_contact">Demandez un devis</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- PACKAGES -->
+<section id="templatemo_packages" class="container">
+    <div class="text-center">
+        <h2 class="templatemo_pricing_title">NOS OFFRES</h2>
+        <p class="templatemo_pricing_subtitle">Choisissez la solution adaptée à vos besoins</p>
+    </div>
+
+    <div class="row">
+
+        <!-- Offer 1 -->
+        <div class="col-sm-4">
+            <div class="templatemo_pricing_table">
+                <div class="templatemo_pricing_box">
+                    <span class="price_title">AUDIT COMPLET</span>
+                    <span class="sign">€</span><span class="price">150</span> <span class="month">/ mois</span>
+                </div>
+                <ul class="templatemo_pricing_list">
+                    <li>Audit énergétique simple</li>
+                    <li>Conseils d'économie d'énergie</li>
+                    <li>Suivi à distance</li>
+                </ul>
+                <a href="#templatemo_contact" class="templatemo_signup">Demander un devis</a>
+            </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="col-sm-4">
+            <div class="templatemo_pricing_table">
+                <div class="templatemo_pricing_box">
+                    <span class="price_title">CHAUFFERIE</span>
+                    <span class="sign">€</span><span class="price">250</span> <span class="month">/ mois</span>
+                </div>
+                <ul class="templatemo_pricing_list">
+                    <li>Installation</li>
+                    <li>Maintenance</li>
+                    <li>Audit</li>
+                </ul>
+                <a href="#templatemo_contact" class="templatemo_signup">Demander un devis</a>
+            </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="col-sm-4">
+            <div class="templatemo_pricing_table">
+                <div class="templatemo_pricing_box">
+                    <span class="price_title">ÉLECTRICITÉ</span>
+                    <span class="sign">€</span><span class="price">350</span> <span class="month">/ mois</span>
+                </div>
+                <ul class="templatemo_pricing_list">
+                    <li>Installation</li>
+                    <li>Maintenance</li>
+                    <li>Audit</li>
+                </ul>
+                <a href="#templatemo_contact" class="templatemo_signup">Demander un devis</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="templatemo_about" class="container">
+    <div class="row">
+        <div class="col-md-4 templatemo_work">
+            <img src="images/templatemo_workicon.png" alt="Icône métier">
+        </div>
+        <div class="col-md-8">
+            <h2 class="templatemo_worktitle">À PROPOS DE NOUS</h2>
+            <p>
+                MG CONSEIL fournit des solutions professionnelles en chaufferie, électricité et audit énergétique.
+            </p>
+            <ul>
+                <li>Installation et maintenance de chaufferies</li>
+                <li>Services électriques sécurisés</li>
+                <li>Audit énergétique complet</li>
+                <li>Conseils personnalisés et solutions durables</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="templatemo_contact" class="templatemo_contact contact-wrapper">
+    <div class="text-center">
+        <h2 class="templatemo_contacttitle">CONTACTEZ-NOUS</h2>
+        <p class="templatemo_sub_contacttitle">Demandez un devis ou posez vos questions</p>
+    </div>
+
+    <div class="templatemo_contactform">
+        <form action="contact.php" method="post">
+            <input type="text" name="name" class="form-control" placeholder="Nom" required>
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <input type="tel" name="phone" class="form-control" placeholder="Téléphone">
+            <input type="text" name="subject" class="form-control" placeholder="Sujet">
+            <textarea name="message" class="message" placeholder="Votre message..." required></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="templatemo_footer">
+    <div class="container text-center">
+        <p>&copy; 2084 MG CONSEIL</p>
+    </div>
+</footer>
+
 </body>
 </html>
