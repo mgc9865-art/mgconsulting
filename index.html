@@ -21,9 +21,20 @@
         .templatemo_contactform {
             padding: 30px 0;
         }
-        .hs-form-frame {
-            max-width: 600px;
-            margin: 0 auto;
+
+        /* Carré blanc autour du formulaire */
+        .templatemo_contactform .form-container {
+            background-color: #ffffff; /* fond blanc */
+            padding: 40px;             /* espace intérieur */
+            max-width: 700px;          /* largeur maximale */
+            margin: 0 auto;            /* centrage horizontal */
+            border-radius: 15px;       /* coins arrondis */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* ombre douce */
+        }
+
+        /* Optionnel : espacement entre les champs */
+        .templatemo_contactform .hs-form-field {
+            margin-bottom: 20px;
         }
     </style>
 
@@ -245,9 +256,13 @@
                     <div class="templatemo_contacttitle">CONTACTEZ-NOUS</div>
                     <div class="templatemo_sub_contacttitle">Demandez un devis ou posez vos questions</div>
                 </div>
-                <div class="templatemo_contactform text-center" style="padding: 50px 0;">
-                    <script src="https://js-eu1.hsforms.net/forms/embed/147349180.js" defer></script>
-                    <div class="hs-form-frame" data-region="eu1" data-form-id="59b511f4-627b-46fd-b037-7a76288fa6fe" data-portal-id="147349180"></div>
+
+                <!-- Formulaire dans un carré blanc -->
+                <div class="templatemo_contactform text-center">
+                    <div class="form-container">
+                        <script src="https://js-eu1.hsforms.net/forms/embed/147349180.js" defer></script>
+                        <div class="hs-form-frame" data-region="eu1" data-form-id="59b511f4-627b-46fd-b037-7a76288fa6fe" data-portal-id="147349180"></div>
+                    </div>
                 </div>
             </div>
         </div> <!-- /container wrapper -->
@@ -266,8 +281,3 @@
     </div> <!-- /header wrapper -->
 </body>
 </html>
-
-
-
-
-
